@@ -17,25 +17,43 @@
 // invoice.Add();
 // invoice.Delete();
 
-using SOLID.NET_practice.O;
 
-var price1 = 1000d;
-List<IDiscountStrategy> discountStrategies1 = new List<IDiscountStrategy>()
-{
-    new SimpleDiscount(),
-    new BlackFridayDiscount()
-};
+// OCP PRINCEPLE
+// using SOLID.NET_practice.O;
+//
+// var price1 = 1000d;
+// List<IDiscountStrategy> discountStrategies1 = new List<IDiscountStrategy>()
+// {
+//     new SimpleDiscount(),
+//     new BlackFridayDiscount()
+// };
+//
+// var discountCalculator1 = new DiscountCalculator(discountStrategies1);
+// var resultDiscount1 = discountCalculator1.CalculateDiscount(price1);
+// Console.WriteLine(resultDiscount1);
+//
+// var price2 = 2000d;
+// List<IDiscountStrategy> discountStrategies2 = new List<IDiscountStrategy>()
+// {
+//     new SimpleDiscount(),
+// };
+//
+// var discountCalculator2 = new DiscountCalculator(discountStrategies2);
+// var resultDiscount2 = discountCalculator2.CalculateDiscount(price2);
+// Console.WriteLine(resultDiscount2);
 
-var discountCalculator1 = new DiscountCalculator(discountStrategies1);
-var resultDiscount1 = discountCalculator1.CalculateDiscount(price1);
-Console.WriteLine(resultDiscount1);
+using SOLID.NET_practice.LSP;
 
-var price2 = 2000d;
-List<IDiscountStrategy> discountStrategies2 = new List<IDiscountStrategy>()
-{
-    new SimpleDiscount(),
-};
+BaseBankAccount savingsAccount = new SavingsAccount("CA236722", 1000m, 0.03m);
+BaseBankAccount currentAccount = new CurrentAccount("JP335675", 1500m, 500m);
 
-var discountCalculator2 = new DiscountCalculator(discountStrategies2);
-var resultDiscount2 = discountCalculator2.CalculateDiscount(price2);
-Console.WriteLine(resultDiscount2);
+Console.WriteLine("Before transaction:");
+Console.WriteLine(savingsAccount);
+Console.WriteLine(currentAccount);
+
+savingsAccount.Withdraw(2000m);
+currentAccount.Withdraw(3000m);
+
+Console.WriteLine("After transaction:");
+Console.WriteLine(savingsAccount);
+Console.WriteLine(currentAccount);
