@@ -42,18 +42,40 @@
 // var resultDiscount2 = discountCalculator2.CalculateDiscount(price2);
 // Console.WriteLine(resultDiscount2);
 
-using SOLID.NET_practice.LSP;
+//LSP PRINCIPLE
+// using SOLID.NET_practice.LSP;
+//
+// BaseBankAccount savingsAccount = new SavingsAccount("CA236722", 1000m, 0.03m);
+// BaseBankAccount currentAccount = new CurrentAccount("JP335675", 1500m, 500m);
+//
+// Console.WriteLine("Before transaction:");
+// Console.WriteLine(savingsAccount);
+// Console.WriteLine(currentAccount);
+//
+// savingsAccount.Withdraw(2000m);
+// currentAccount.Withdraw(3000m);
+//
+// Console.WriteLine("After transaction:");
+// Console.WriteLine(savingsAccount);
+// Console.WriteLine(currentAccount);
 
-BaseBankAccount savingsAccount = new SavingsAccount("CA236722", 1000m, 0.03m);
-BaseBankAccount currentAccount = new CurrentAccount("JP335675", 1500m, 500m);
+using SOLID.NET_practice.ISP;
+using SOLID.NET_practice.ISP.Interfaces;
 
-Console.WriteLine("Before transaction:");
-Console.WriteLine(savingsAccount);
-Console.WriteLine(currentAccount);
+var printers = new List<IPrinterTasks>()
+{
+  new HpPrinter("HP-1-TEST"),
+  new HpPrinter("HP-2-TEST"),
+  new LgPrinter("LG-3-TEST"),
+  new LgPrinter("LG-4-TEST"),
+  new SamsungPrinter("SM-5-TEST"),
+  new SamsungPrinter("SM-6-TEST")
+};
 
-savingsAccount.Withdraw(2000m);
-currentAccount.Withdraw(3000m);
+var printerNetwork = new PrinterNetwork(printers);
 
-Console.WriteLine("After transaction:");
-Console.WriteLine(savingsAccount);
-Console.WriteLine(currentAccount);
+string guid = Guid.NewGuid().ToString();
+printerNetwork.StartScanningMultipleContents(guid);
+printerNetwork.StartPrintingMultipleContents(guid);
+printerNetwork.StartFaxingMultipleContents(Guid.NewGuid().ToString());
+printerNetwork.StartDuplexPrintingMultipleContents(Guid.NewGuid().ToString());
