@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.NET_practice", "SOLID.NET_practice\SOLID.NET_practice.csproj", "{40071B84-E6FC-4A9C-B47B-82AFA3F2B1AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns_practice", "DesignPatterns_practice\DesignPatterns_practice.csproj", "{8DE8F06C-7C43-4DA1-A3A0-1033AB6B7055}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{40071B84-E6FC-4A9C-B47B-82AFA3F2B1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40071B84-E6FC-4A9C-B47B-82AFA3F2B1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40071B84-E6FC-4A9C-B47B-82AFA3F2B1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE8F06C-7C43-4DA1-A3A0-1033AB6B7055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE8F06C-7C43-4DA1-A3A0-1033AB6B7055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE8F06C-7C43-4DA1-A3A0-1033AB6B7055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE8F06C-7C43-4DA1-A3A0-1033AB6B7055}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
