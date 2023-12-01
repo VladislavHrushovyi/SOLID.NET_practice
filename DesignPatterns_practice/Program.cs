@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using DesignPatterns_practice.Creational.AbstractFactory;
 
-Console.WriteLine("Hello, World!");
+var factoryApp = new AbstractFactoryApplication();
+factoryApp.RunExampleFactory();
