@@ -1,0 +1,21 @@
+﻿namespace DesignPatterns_practice.Creational.Prototype;
+
+public class PrototypeApplication
+{
+    public void RunPrototypeApplication()
+    {
+        ColorManager colorManager = new();
+
+        colorManager["red"] = new Color(255, 0, 0);
+        colorManager["green"] = new Color(0, 255, 0);
+        colorManager["blue"] = new Color(0, 0, 255);
+
+        colorManager["angry"] = new Color(255, 54, 0);
+        colorManager["peace"] = new Color(128, 211, 128);
+        colorManager["flame"] = new Color(211, 34, 20);
+        
+        Color c1 = colorManager["red"].Clone() as Color;
+        Color c2 = colorManager["angry"].Clone() as Color;
+        Color c3 = colorManager["flame"].Clone() as Color;
+    }
+}
