@@ -3,6 +3,7 @@ using DesignPatterns_practice.Creational.Builder;
 using DesignPatterns_practice.Creational.FactoryMethod;
 using DesignPatterns_practice.Creational.Prototype;
 using DesignPatterns_practice.Creational.Singleton;
+using DesignPatterns_practice.Structural.Adapter;
 
 // var factoryApp = new AbstractFactoryApplication();
 // factoryApp.RunExampleFactory();
@@ -15,6 +16,9 @@ using DesignPatterns_practice.Creational.Singleton;
 //
 // var prototypeApp = new PrototypeApplication();
 // prototypeApp.RunPrototypeApplication();
+//
+// var singletonApp = new SingletonApplication();
+// singletonApp.RunSingletonScenario();
 
-var singletonApp = new SingletonApplication();
-singletonApp.RunSingletonScenario();
+var adapterApp = new AdapterApplication();
+adapterApp.RunAdapterScenario();
