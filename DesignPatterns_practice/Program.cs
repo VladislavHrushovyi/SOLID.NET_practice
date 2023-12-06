@@ -4,6 +4,7 @@ using DesignPatterns_practice.Creational.FactoryMethod;
 using DesignPatterns_practice.Creational.Prototype;
 using DesignPatterns_practice.Creational.Singleton;
 using DesignPatterns_practice.Structural.Adapter;
+using DesignPatterns_practice.Structural.Bridge;
 
 // var factoryApp = new AbstractFactoryApplication();
 // factoryApp.RunExampleFactory();
@@ -19,6 +20,9 @@ using DesignPatterns_practice.Structural.Adapter;
 //
 // var singletonApp = new SingletonApplication();
 // singletonApp.RunSingletonScenario();
+//
+// var adapterApp = new AdapterApplication();
+// adapterApp.RunAdapterScenario();
 
-var adapterApp = new AdapterApplication();
-adapterApp.RunAdapterScenario();
+var bridgeApp = new BridgeApplication();
+bridgeApp.RunBridgeScenario();
