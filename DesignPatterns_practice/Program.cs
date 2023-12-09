@@ -7,6 +7,7 @@ using DesignPatterns_practice.Structural.Adapter;
 using DesignPatterns_practice.Structural.Bridge;
 using DesignPatterns_practice.Structural.Composite;
 using DesignPatterns_practice.Structural.Decorator;
+using DesignPatterns_practice.Structural.Facade;
 
 // var factoryApp = new AbstractFactoryApplication();
 // factoryApp.RunExampleFactory();
@@ -31,6 +32,9 @@ using DesignPatterns_practice.Structural.Decorator;
 //
 // var compositeApp = new CompositeApplication();
 // compositeApp.RunCompositeScenario();
+//
+// var decoratorApp = new DecoratorApplication();
+// decoratorApp.RunDecoratorScenario();
 
-var decoratorApp = new DecoratorApplication();
-decoratorApp.RunDecoratorScenario();
+var facadeApp = new FacadeApplication();
+facadeApp.RunFacadeScenario();
