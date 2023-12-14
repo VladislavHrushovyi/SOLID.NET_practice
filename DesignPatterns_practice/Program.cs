@@ -1,5 +1,6 @@
 ﻿using DesignPatterns_practice.Behavioral.ChainOfResponsibility;
 using DesignPatterns_practice.Behavioral.Command;
+using DesignPatterns_practice.Behavioral.Iterator;
 using DesignPatterns_practice.Creational.AbstractFactory;
 using DesignPatterns_practice.Creational.Builder;
 using DesignPatterns_practice.Creational.FactoryMethod;
@@ -51,6 +52,9 @@ using DesignPatterns_practice.Structural.Proxy;
 //
 // var chainApp = new ChainOfResponsibilityApplication();
 // chainApp.RunChainOfResponsibilityScenario();
+//
+// var commandApp = new CommandApplication();
+// commandApp.RunCommandScenario();
 
-var commandApp = new CommandApplication();
-commandApp.RunCommandScenario();
+var iteratorApp = new IteratorApplication();
+iteratorApp.RunIteratorScenario();
