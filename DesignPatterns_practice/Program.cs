@@ -1,5 +1,6 @@
 ﻿using DesignPatterns_practice.Behavioral.ChainOfResponsibility;
 using DesignPatterns_practice.Behavioral.Memento;
+using DesignPatterns_practice.Behavioral.Observer;
 using DesignPatterns_practice.Creational.AbstractFactory;
 using DesignPatterns_practice.Creational.Builder;
 using DesignPatterns_practice.Creational.FactoryMethod;
@@ -51,6 +52,9 @@ using DesignPatterns_practice.Structural.Proxy;
 
 // var chainApp = new ChainOfResponsibilityApplication();
 // chainApp.RunChainOfResponsibilityScenario();
+//
+// var mementoApp = new MementoApplication();
+// mementoApp.RunMementoScenario();
 
-var mementoApp = new MementoApplication();
-mementoApp.RunMementoScenario();
+var observerApp = new ObserverApplication();
+observerApp.RunObserverScenario();
