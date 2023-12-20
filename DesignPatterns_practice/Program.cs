@@ -3,6 +3,7 @@ using DesignPatterns_practice.Behavioral.Memento;
 using DesignPatterns_practice.Behavioral.Observer;
 using DesignPatterns_practice.Behavioral.State;
 using DesignPatterns_practice.Behavioral.Strategy;
+using DesignPatterns_practice.Behavioral.TemplateMethod;
 using DesignPatterns_practice.Creational.AbstractFactory;
 using DesignPatterns_practice.Creational.Builder;
 using DesignPatterns_practice.Creational.FactoryMethod;
@@ -63,6 +64,9 @@ using DesignPatterns_practice.Structural.Proxy;
 //
 // var stateApp = new StateApplication();
 // stateApp.RunStateScenario();
+//
+// var strategyApp = new StrategyApplication();
+// strategyApp.RunStrategyScenario();
 
-var strategyApp = new StrategyApplication();
-strategyApp.RunStrategyScenario();
+var templateMethodApp = new TemplateMethodApplication();
+templateMethodApp.RunTemplateMethodScenario();
